@@ -1,0 +1,73 @@
+#wrapper {
+  margin: 0 auto;
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+nav {
+  margin: 0 auto;
+  background-color: lightcoral;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  background-color: lightgreen;
+}
+a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 2vw;
+  background-color: lightsalmon;
+  width: 100%;
+  height: 100%;
+}
+/* 비디오 */
+#videoArea {
+  position: relative;
+}
+#mainplay {
+  width: 100%;
+  height: 100%;
+}
+#mainVideo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* 비디오 위에 글씨 */
+#maintext {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: start;
+  color: chartreuse;
+}
+footer {
+  background-color: #555555;
+  clear: both;
+  text-align: center;
+  padding-bottom: 30px;
+}
+footer h3 {
+  text-align: left;
+  margin: 0;
+}
