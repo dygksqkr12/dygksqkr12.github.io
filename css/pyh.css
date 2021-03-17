@@ -5,10 +5,24 @@
   height: 100%;
   overflow: hidden;
 }
+/* #wd {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  left: 0;
+}
+#wdtext {
+  font-size: 0.1vw;
+  left: 5.5vw;
+  top: -1vw;
+  position: absolute;
+} */
+
 header {
   width: 100%;
   height: 100%;
   text-align: center;
+  position: relative;
 }
 nav {
   margin: 0 auto;
@@ -24,23 +38,43 @@ ul {
   width: 100%;
   height: 100%;
 }
+ul:hover * {
+  color: white;
+  opacity: 0.7;
+  transform: scale(0.8, 0.8);
+}
 li {
   list-style: none;
   display: inline-block;
   background-color: lightgreen;
 }
+li:hover {
+  transform: scale(1.5, 1.5);
+  opacity: 1 !important;
+}
+.now {
+  color: aqua;
+}
 a {
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 20px;
   color: #000;
   font-size: 2vw;
   background-color: lightsalmon;
   width: 100%;
   height: 100%;
 }
+a:hover {
+  color: aqua;
+  opacity: 1 !important;
+  text-decoration: underline;
+}
+
 /* 비디오 */
 #videoArea {
   position: relative;
+  width: 100vw;
+  height: 80vh;
 }
 #mainplay {
   width: 100%;
@@ -51,15 +85,71 @@ a {
   height: 100%;
   overflow: hidden;
 }
+#bona {
+  width: auto;
+  height: 40vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#wondo {
+  width: auto;
+  height: 40vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 /* 비디오 위에 글씨 */
 #maintext {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  text-align: start;
+  text-align: center;
   color: chartreuse;
+  font-size: 3vw;
+  top: 15vh;
+}
+#come {
+  animation-name: my;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#wbt {
+  animation-name: me;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-out; */
+}
+
+@keyframes my {
+  25% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  75% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    /* width: 300px; */
+    /* height: 300px; */
+  }
+}
+@keyframes me {
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+#come {
+  font-size: 5vw;
 }
 footer {
   background-color: #555555;
