@@ -1,6 +1,6 @@
 #wrapper {
   margin: 0 auto;
-  background-color: lightblue;
+  background-color: black;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -26,7 +26,7 @@ header {
 }
 nav {
   margin: 0 auto;
-  background-color: lightcoral;
+  background-color: black;
   width: 100%;
   height: 100%;
 }
@@ -34,7 +34,7 @@ ul {
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  background-color: lightgray;
+  background-color: black;
   width: 100%;
   height: 100%;
 }
@@ -46,26 +46,26 @@ ul:hover * {
 li {
   list-style: none;
   display: inline-block;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 }
 li:hover {
   transform: scale(1.5, 1.5);
   opacity: 1 !important;
 }
 .now {
-  color: aqua;
+  color: white;
 }
 a {
   text-decoration: none;
   padding: 0 20px;
-  color: #000;
+  color: red;
   font-size: 2vw;
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
   width: 100%;
   height: 100%;
 }
 a:hover {
-  color: aqua;
+  color: white;
   opacity: 1 !important;
   text-decoration: underline;
 }
@@ -106,9 +106,9 @@ a:hover {
   height: 100%;
   overflow: hidden;
   text-align: center;
-  color: chartreuse;
+  color: white;
   font-size: 3vw;
-  top: 15vh;
+  top: 0;
 }
 #come {
   animation-name: my;
@@ -116,14 +116,60 @@ a:hover {
   animation-iteration-count: infinite;
 }
 #wbt {
-  animation-name: me;
+  /* animation-name: me;
   animation-duration: 1s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   /* animation-direction: alternate; */
   /* animation-timing-function: ease-out; */
 }
+#wt {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 5vh;
+  right: 3.5vw;
+  animation-name: won;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#bt {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 5vh;
+  left: 3.5vw;
+  animation-name: bo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bo {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes won {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 
 @keyframes my {
+  0% {
+    transform: scale(1.5, 1.5);
+  }
   25% {
     transform: scale(0);
   }
@@ -151,13 +197,95 @@ a:hover {
 #come {
   font-size: 5vw;
 }
+
+/* 자기소개 */
+#intro {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+}
+#pyh {
+  position: absolute;
+  width: 30vw;
+  height: 80vh;
+  left: 15vw;
+  border: 1px solid white;
+  overflow: hidden;
+}
+#pyhimg {
+  position: absolute;
+  width: auto;
+  height: 80vh;
+  left: -4vw;
+}
+#pyhintro {
+  position: absolute;
+  width: 30vw;
+  height: 80vw;
+  overflow: hidden;
+  text-align: center;
+  right: 23vw;
+  color: white;
+  font-size: 1.5vw;
+  top: 30vh;
+}
+
+/* 취미 */
+#wbpicarea {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+}
+#wbpic {
+  position: absolute;
+  width: 30vw;
+  height: 80vh;
+  left: 15vw;
+  border: 1px solid white;
+  overflow: hidden;
+}
+#wbpictext {
+  position: absolute;
+  width: 30vw;
+  height: 80vw;
+  overflow: hidden;
+  text-align: center;
+  right: 23vw;
+  color: white;
+  font-size: 1.5vw;
+  top: 30vh;
+}
+
 footer {
-  background-color: #555555;
+  background-color: black;
   clear: both;
   text-align: center;
   padding-bottom: 30px;
 }
-footer h3 {
-  text-align: left;
-  margin: 0;
+footer p {
+  /* text-align: left;
+  margin: 0; */
+  color: white;
 }
+
+/* body {
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  background-image: radial-gradient(#666, #333);
+}
+
+#instructions {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  padding-bottom: 6px;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+} */
