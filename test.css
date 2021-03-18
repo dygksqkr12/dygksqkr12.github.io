@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 3000px;
+}
+#bona {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background: url(./image/wb_1.jpg);
+  background-attachment: fixed;
+}
+#wondo {
+  position: relative;
+  width: 100%;
+  height: 2000px;
+  background: url(./image/wondo.jpg);
+  background-attachment: fixed;
+}

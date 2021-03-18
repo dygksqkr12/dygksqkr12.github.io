@@ -237,14 +237,106 @@ a:hover {
   width: 100vw;
   height: 80vh;
   background-color: black;
+  /* margin: 0;
+  padding: 0;
+  height: auto; */
 }
 #wbpic {
   position: absolute;
-  width: 30vw;
+  width: 70vw;
   height: 80vh;
   left: 15vw;
   border: 1px solid white;
-  overflow: hidden;
+  overflow: auto;
+}
+#box {
+  margin: 0;
+  padding: 0;
+  height: 3000;
+}
+#wb1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_1.jpg);
+  background-attachment: fixed;
+}
+#wb2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_2.jpg);
+  background-attachment: fixed;
+}
+#wb3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_3.jpg);
+  background-attachment: fixed;
+}
+#wb4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_4.jpg);
+  background-attachment: fixed;
+}
+#wb5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_6.jpg);
+  background-attachment: fixed;
+}
+#wb7 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_7.jpg);
+  background-attachment: fixed;
+}
+#wb8 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_8.jpg);
+  background-attachment: fixed;
+}
+#wb9 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_9.jpg);
+  background-attachment: fixed;
+}
+#wb10 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_10.jpg);
+  background-attachment: fixed;
+}
+#wb11 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_11.jpg);
+  background-attachment: fixed;
+}
+#wb12 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_12.jpg);
+  background-attachment: fixed;
+}
+#wb13 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/image/wb_13.jpg);
+  background-attachment: fixed;
 }
 #wbpictext {
   position: absolute;
@@ -269,23 +361,3 @@ footer p {
   margin: 0; */
   color: white;
 }
-
-/* body {
-  margin: 0;
-  overflow: hidden;
-}
-
-canvas {
-  background-image: radial-gradient(#666, #333);
-}
-
-#instructions {
-  position: absolute;
-  color: #fff;
-  bottom: 0;
-  padding-bottom: 6px;
-  font-family: sans-serif;
-  width: 100%;
-  text-align: center;
-  pointer-events: none;
-} */
