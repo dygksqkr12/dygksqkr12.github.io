@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery-3.6.0.js"></script>
+    <title>회원정보</title>
+  </head>
+  <body onload="load()">
+    <table id="tbl-entry"></table>
+    <style>
+      #tbl-entry {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        position: absolute;
+        left: 18vw;
+        top: 30vh;
+      }
+      #tbl-entry th,
+      #tbl-entry td {
+        border: 1px solid #000;
+        padding: 5px;
+      }
+    </style>
+    <script>
+      function load() {
+        // localStorage.entries || []
+        var member = JSON.parse(localStorage.getItem("members")) || [];
+
+        var $table = $("#tbl-entry");
+
+        //header추가
+        $table.html("<tr><th>No</th><th>이름</th><th>비밀번호</th></tr>");
+
+        if (member.length) {
+          //저장된 entry가 있는 경우
+          $.each(member, function (i, entry) {
+            var $tr = $("<tr>");
+            $tr
+              .append("<td>" + (i + 1) + "</td>")
+              .append("<td>" + entry.id + "</td>")
+              .append("<td>" + entry.pwd + "</td>")
+              .appendTo($table);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,53 +1,3 @@
-// mypets
-window.addEventListener("load", () => {
-  $("#wbpic").scroll(function () {
-    var scroll_position = $("#wbpic").scrollTop() / 2;
-    $("section").css({
-      "background-position-x": +scroll_position + "px",
-    });
-  })();
-});
-
-// roadmap
-window.addEventListener("load", () => {
-  $(document).on("mouseover", ".container .column", function () {
-    $(this).addClass("active").siblings().removeClass("active");
-  });
-});
-
-// login
-function log() {
-  // console.log(screen);
-  var w = 500;
-  var h = 600;
-  var left = (screen.availWidth - w) / 2;
-  var top = (screen.availHeight - h) / 2;
-
-  open(
-    "login.html",
-    "popup",
-    "width=500, height=600, left=" + left + ", top=" + top
-  );
-}
-
-const loginText = document.querySelector(".title-text .login");
-const loginForm = document.querySelector("form.login");
-const loginBtn = document.querySelector("label.login");
-const signupBtn = document.querySelector("label.signup");
-const signupLink = document.querySelector("form .signup-link a");
-signupBtn.onclick = () => {
-  loginForm.style.marginLeft = "-50%";
-  loginText.style.marginLeft = "-50%";
-};
-loginBtn.onclick = () => {
-  loginForm.style.marginLeft = "0%";
-  loginText.style.marginLeft = "0%";
-};
-signupLink.onclick = () => {
-  signupBtn.click();
-  return false;
-};
-
 // const loginText = document.querySelector(".title-text .login");
 // const loginForm = document.querySelector("form.login");
 // const loginBtn = document.querySelector("label.login");
@@ -83,14 +33,14 @@ function login() {
 
   if (pwd != null) {
     alert("로그인성공");
-    var w = 500;
-    var h = 600;
+    var w = 300;
+    var h = 300;
     var left = (screen.availWidth - w) / 2;
     var top = (screen.availHeight - h) / 2;
     open(
       "table.html",
       "new",
-      "width=500, height=600, left=" + left + ", top=" + top
+      "width=300, height=300, left=" + left + ", top=" + top
     );
     window.close();
   } else {

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="test3.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="로그인" onclick="log();" />
+    <script>
+      function log() {
+        pop = open(
+          "test3.html",
+          "newWindow",
+          //   "_self",
+          "width=500, height=300, top=300, left=300"
+        );
+        console.log(pop);
+        console.log(window == pop);
+        //1초 이후 실행
+        setTimeout(function () {
+          pop.alert("hello js~");
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

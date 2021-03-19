@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
-<html lang="ko" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
     <!-- <title>Login & Signup Form | CodingNepal</title> -->
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="test3.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/login.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="title-text">
-        <div class="title login">Login</div>
-        <div class="title signup">Signup</div>
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
       </div>
       <div class="form-container">
         <div class="slide-controls">
@@ -27,28 +25,17 @@
         <div class="form-inner">
           <form action="#" class="login">
             <div class="field">
-              <input
-                type="text"
-                placeholder="Email Address"
-                required
-                id="userId"
-              />
+              <input type="text" placeholder="Email Address" required />
             </div>
             <div class="field">
-              <input
-                type="password"
-                placeholder="Password"
-                required
-                id="userPwd"
-              />
+              <input type="password" placeholder="Password" required />
             </div>
             <div class="pass-link">
               <a href="#">Forgot password?</a>
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <button onclick="login()">Login</button>
-              <!-- <input type="button" value="Login" onclick="login()" /> -->
+              <input type="submit" value="Login" />
             </div>
             <div class="signup-link">
               Not a member? <a href="">Signup now</a>
@@ -56,33 +43,17 @@
           </form>
           <form action="#" class="signup">
             <div class="field">
-              <input
-                type="text"
-                placeholder="Email Address"
-                required
-                id="upID"
-              />
+              <input type="text" placeholder="Email Address" required />
             </div>
             <div class="field">
-              <input
-                type="password"
-                placeholder="Password"
-                required
-                id="upPwd"
-              />
+              <input type="password" placeholder="Password" required />
             </div>
             <div class="field">
-              <input
-                type="password"
-                placeholder="Confirm password"
-                required
-                id="chk_pwd"
-              />
+              <input type="password" placeholder="Confirm password" required />
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <button onclick="signup()">signup</button>
-              <!-- <input type="button" value="Signup" onclick="signup()" /> -->
+              <input type="submit" value="Signup" />
             </div>
           </form>
         </div>
